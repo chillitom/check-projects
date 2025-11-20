@@ -29,6 +29,10 @@ func LoadConfig(configPath string) (*Config, error) {
 		if fileExists(globalPath) {
 			paths = append(paths, globalPath)
 		}
+		globalPath := filepath.Join(home, ".check-projects.yml")
+		if fileExists(globalPath) {
+			paths = append(paths, globalPath)
+		}
 	}
 
 	if len(paths) == 0 {
