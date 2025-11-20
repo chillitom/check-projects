@@ -104,6 +104,7 @@ Configuration files are searched in this order:
 1. Path specified with `--config` flag
 2. `./check-projects.yml` (current directory)
 3. `~/check-projects.yml` (home directory)
+4. `~/.check-projects.yml`(home directory, hidden dotfile)
 
 ### Example Configuration
 
